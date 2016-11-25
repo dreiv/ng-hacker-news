@@ -1,21 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Open%20Sans);
-@import "../variables";
-
-body {
-  margin-bottom: 0;
-
-  @media #{$mobile-only} {
-    margin: 0;
-  }
-}
+@import "../_variables";
 
 .wrapper {
-  background-color: #F6F6EF;
-  width: 85%;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  position: relative;
+
   height: 100%;
+  margin: 0 auto;
+  width: 85%;
+
+  background-color: #F6F6EF;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
 
   @media #{$mobile-only} {
     width: 100%;

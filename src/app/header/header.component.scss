@@ -1,1 +1,16 @@
-@import "../../variables";
+@import "../../_variables";
+
+.header {
+  background-color: #f60;
+  color: #fff;
+  padding: .3em 0;
+  z-index: 1;
+
+  @media #{$mobile-only} {
+    height: 50px;
+    position: fixed;
+    top: 0;
+  }
+}
+
+

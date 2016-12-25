@@ -1,16 +1,55 @@
 @import "../../_variables";
 
 .header {
-  background-color: #f60;
-  color: #fff;
-  padding: .3em 0;
-  z-index: 1;
+  display: flex;
 
-  @media #{$mobile-only} {
-    height: 50px;
-    position: fixed;
-    top: 0;
+  background-color: #f60;
+
+  &__logo {
+    font-weight: bold;
+
+    display: inline-flex;
+
+    margin: 2px;
+
+    text-decoration: none;
+    color: white;
+
+    border: 2px solid white;
+
+    justify-content: center;
+    padding: 0 2px;
+
+    white-space: nowrap;
+
+    &:before {
+      content: "Hacker News";
+      @media #{$mobile-only} {
+        content: "HN";
+      }
+    }
+  }
+
+  &__menu {
+    display: inline-flex;
+
+    width: 100%;
+
+    align-self: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a ~ a:before {
+      content: '|';
+      color: white;
+    }
   }
 }
+
 
 
